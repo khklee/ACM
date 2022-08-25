@@ -27,7 +27,7 @@ namespace ACM.BL
         }
 
         // Saves the current order
-        public bool Save()
+        public bool Save(Order order)
         {
             // Code that saves the defined order
 

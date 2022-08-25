@@ -28,7 +28,7 @@ namespace ACM.BL
         }
 
         // Saves the current customer
-        public bool Save()
+        public bool Save(Customer customer)
         {
             // Code that saves the defined customer
 
