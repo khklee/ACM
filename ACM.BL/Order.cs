@@ -31,29 +31,5 @@ namespace ACM.BL
 
             return isValid;
         }
-
-        // Retrieve one order
-        public Order Retrieve(int orderId)
-        {
-            // Code that retrieve the defined order
-
-            return new Order();
-        }
-
-        // Retrieve all orders
-        public List<Order> Retrieve()
-        {
-            // Code that retrieve all of the orders
-
-            return new List<Order>();
-        }
-
-        // Saves the current order
-        public bool Save()
-        {
-            // Code that saves the defined order
-
-            return true;
-        }
     }
 }
