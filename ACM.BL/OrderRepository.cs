@@ -29,9 +29,27 @@ namespace ACM.BL
         // Saves the current order
         public bool Save(Order order)
         {
-            // Code that saves the defined order
+            var success = true;
 
-            return true;
+            if (order.HasChanges)
+            {
+                if (order.IsValid)
+                {
+                    if (order.IsNew)
+                    {
+                        // Call an Insert Stored Procedure
+                    }
+                    else
+                    {
+                        // Call an Insert Stored Procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }

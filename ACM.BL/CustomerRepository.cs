@@ -38,9 +38,27 @@ namespace ACM.BL
         // Saves the current customer
         public bool Save(Customer customer)
         {
-            // Code that saves the defined customer
+            var success = true;
 
-            return true;
+            if (customer.HasChanges)
+            {
+                if (customer.IsValid)
+                {
+                    if (customer.IsNew)
+                    {
+                        // Call an Insert Stored Procedure
+                    }
+                    else
+                    {
+                        // Call an Insert Stored Procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }

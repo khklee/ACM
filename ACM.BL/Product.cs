@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Product
+    public class Product : EntityBase
     {
         public Product()
         {
@@ -19,16 +19,14 @@ namespace ACM.BL
             ProductId = productId;
         }
 
+        public override string ToString() => ProductName;
+
         public string ProductName { get; set; }
-
         public int ProductId { get; private set; }
-
         public string ProductDescription { get; set; }
-
         public decimal? CurrentPrice { get; set; }
-
         // Validates the product data
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
